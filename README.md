@@ -1,4 +1,4 @@
-# ReadLine
+# ReadLine (chrome extension)
 Adding row line for easier reading
 
 
