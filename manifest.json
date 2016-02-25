@@ -1,0 +1,27 @@
+{
+    "name": "ReadLine",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Adding row line for easier reading",
+    "homepage_url": "https://github.com/ademilter/read-line",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["src/main.css"]
+    }, {
+        "matches": ["<all_urls>"],
+        "js": ["src/jquery.min.js"]
+    }],
+    "browser_action": {
+        "default_icon": "icons/icon19.png",
+        "default_title": "Make this page red",
+        "default_popup": "popup.html"
+    }
+}
